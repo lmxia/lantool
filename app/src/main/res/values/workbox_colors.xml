@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="workbox_color_primary_light">#8F9CDF</color>
+    <color name="workbox_color_primary">#3F51B5</color>
+    <color name="workbox_color_primary_dark">#303F9F</color>
+    <color name="workbox_color_accent">#FF4081</color>
+    <color name="workbox_hyperlink_text">#006AC7</color>
+    <color name="workbox_first_text">#444444</color>
+    <color name="workbox_second_text">#888888</color>
+    <color name="workbox_third_text">#CCCCCC</color>
+    <color name="workbox_disabled_text">#DDDDDD</color>
+    <color name="workbox_divider_normal">#DEDEDE</color>
+    <color name="workbox_gray_bg">#F3F3F3</color>
+    <color name="workbox_error_hint">#FF4F3A</color>
+    <color name="workbox_second_green">#98D359</color>
+    <color name="workbox_desc">#FF7B1A</color>
+    <color name="workbox_swipe_color_1">#8FCBFF</color>
+    <color name="workbox_swipe_color_2">#6BB3F1</color>
+    <color name="workbox_swipe_color_3">#53A0E3</color>
+    <color name="workbox_swipe_color_4">#4894D7</color>
+    <color name="workbox_white_60">#99FFFFFF</color>
+    <color name="workbox_logcat_v">#000000</color>
+    <color name="workbox_logcat_d">#008F00</color>
+    <color name="workbox_logcat_i">#1874CD</color>
+    <color name="workbox_logcat_w">#FFA500</color>
+    <color name="workbox_logcat_e">#FF0000</color>
+    <color name="workbox_logcat_f">#9F0000</color>
+    <color name="workbox_black_30">#6C000000</color>
+    <color name="workbox_black_50">#80000000</color>
+</resources>
