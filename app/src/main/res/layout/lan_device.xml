@@ -7,58 +7,67 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
     <include layout="@layout/workbox_toolbar"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:orientation="horizontal">
+
         <LinearLayout
             android:layout_width="0dip"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center_horizontal"
             android:orientation="vertical">
+
             <ImageView
                 android:id="@+id/icon_me"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/icon_phone"/>
+                android:src="@drawable/icon_phone" />
+
             <TextView
                 android:id="@+id/device"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/workbox_first_text"
                 android:textSize="16sp"
-                tools:text="xiaomi"/>
+                tools:text="xiaomi" />
+
             <TextView
                 android:id="@+id/device_ip"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/workbox_first_text"
                 android:textSize="14sp"
-                tools:text="192.168.199.101"/>
+                tools:text="192.168.199.101" />
+
             <TextView
                 android:id="@+id/device_mac"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/workbox_first_text"
                 android:textSize="14sp"
-                tools:text="AA:AA:AA:AA:AA:AA"/>
+                tools:text="AA:AA:AA:AA:AA:AA" />
         </LinearLayout>
+
         <View
             android:layout_width="1dp"
             android:layout_height="match_parent"
-            android:background="@color/workbox_divider_normal"/>
+            android:background="@color/workbox_divider_normal" />
+
         <LinearLayout
             android:layout_width="0dip"
             android:layout_height="wrap_content"
-            android:layout_weight="0.6"
             android:layout_gravity="center"
-            android:paddingEnd="4dp"
-            android:paddingStart="4dp"
+            android:layout_weight="0.6"
             android:gravity="center"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp">
+
             <TextView
                 android:id="@+id/ssid"
                 android:layout_width="wrap_content"
@@ -66,124 +75,92 @@
                 android:gravity="center"
                 android:textColor="@color/workbox_first_text"
                 android:textSize="12sp"
-                tools:text="hiwifi"/>
+                tools:text="hiwifi" />
+
             <TextView
                 android:id="@+id/strength"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/workbox_first_text"
                 android:textSize="12sp"
-                tools:text="-17 dbm"/>
+                tools:text="-17 dbm" />
+
             <TextView
                 android:id="@+id/speed"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/workbox_first_text"
                 android:textSize="12sp"
-                tools:text="72 Mbps"/>
+                tools:text="72 Mbps" />
+
             <TextView
                 android:id="@+id/frequency"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/workbox_first_text"
                 android:textSize="12sp"
-                tools:text="2432 MHz"/>
+                tools:text="2432 MHz" />
         </LinearLayout>
+
         <View
             android:layout_width="1dp"
             android:layout_height="match_parent"
-            android:background="@color/workbox_divider_normal"/>
+            android:background="@color/workbox_divider_normal" />
+
         <LinearLayout
             android:layout_width="0dip"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center_horizontal"
             android:orientation="vertical">
+
             <ImageView
                 android:id="@+id/icon_router"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/icon_router"/>
+                android:src="@drawable/icon_router" />
+
             <TextView
                 android:id="@+id/router"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/workbox_first_text"
                 android:textSize="16sp"
-                tools:text="hiwifi"/>
+                tools:text="hiwifi" />
+
             <TextView
                 android:id="@+id/router_ip"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/workbox_first_text"
                 android:textSize="14sp"
-                tools:text="192.168.199.1"/>
+                tools:text="192.168.199.1" />
+
             <TextView
                 android:id="@+id/router_mac"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/workbox_first_text"
                 android:textSize="14sp"
-                tools:text="AA:AA:AA:AA:AA:AA"/>
+                tools:text="AA:AA:AA:AA:AA:AA" />
         </LinearLayout>
     </LinearLayout>
-    <LinearLayout
-        android:id="@+id/dns_layout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:orientation="horizontal">
-        <TextView
-            android:id="@+id/dns1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/workbox_first_text"
-            android:textSize="14sp"
-            tools:text="dns"/>
-        <TextView
-            android:id="@+id/dns2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:textColor="@color/workbox_first_text"
-            android:textSize="14sp"
-            android:visibility="gone"
-            tools:text="dns"/>
-    </LinearLayout>
-    <LinearLayout
-        android:id="@+id/dns_layout2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:orientation="horizontal">
-        <TextView
-            android:id="@+id/dns3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/workbox_first_text"
-            android:textSize="14sp"
-            tools:text="dns"/>
-        <TextView
-            android:id="@+id/dns4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:textColor="@color/workbox_first_text"
-            android:textSize="14sp"
-            android:visibility="gone"
-            tools:text="dns"/>
-    </LinearLayout>
-    <TextView
-        android:id="@+id/mask"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
-        android:layout_marginTop="4dp"
-        android:layout_gravity="center_horizontal"
-        android:textColor="@color/workbox_first_text"
-        android:textSize="14sp"
-        tools:text="mask"/>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="center|center_horizontal|center_vertical"-->
+<!--        android:orientation="horizontal"-->
+<!--        tools:visibility="gone">-->
+
+<!--        <androidx.appcompat.widget.SwitchCompat-->
+<!--            android:id="@+id/switch1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="寻车" />-->
+<!--    </LinearLayout>-->
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"

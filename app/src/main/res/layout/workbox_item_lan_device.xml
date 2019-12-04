@@ -20,7 +20,7 @@
         android:layout_weight="1"
         android:gravity="center"
         android:textColor="@color/workbox_second_text"
-        android:textSize="12sp"
+        android:textSize="14sp"
         tools:text="IP"/>
     <TextView
         android:id="@+id/mac"
@@ -38,6 +38,6 @@
         android:layout_weight="1"
         android:gravity="center"
         android:textColor="@color/workbox_second_text"
-        android:textSize="12sp"
+        android:textSize="14sp"
         tools:text="DEVICE"/>
 </LinearLayout>

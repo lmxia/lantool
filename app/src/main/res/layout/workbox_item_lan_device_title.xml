@@ -14,9 +14,9 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:gravity="center"
-        android:text="IP"
+        android:text="Car-IP"
         android:textColor="@color/workbox_first_text"
-        android:textSize="12sp"/>
+        android:textSize="16sp"/>
     <TextView
         android:id="@+id/title_mac"
         android:layout_width="0dip"
@@ -25,13 +25,13 @@
         android:gravity="center"
         android:text="MAC"
         android:textColor="@color/workbox_first_text"
-        android:textSize="12sp"/>
+        android:textSize="16sp"/>
     <TextView
         android:layout_width="0dip"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:gravity="center"
-        android:text="DEVICE"
+        android:text="Car-Name"
         android:textColor="@color/workbox_first_text"
-        android:textSize="12sp"/>
+        android:textSize="16sp"/>
 </LinearLayout>
