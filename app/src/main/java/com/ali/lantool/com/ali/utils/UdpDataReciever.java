@@ -61,8 +61,15 @@ public class UdpDataReciever {
                     continue;
                 }
                 localUDPSocket.receive(datagramPacket);
-                String[] resvData = new String(datagramPacket.getData()).trim().split(":");
-                if (resvData.length != 0 && resvData[0].equals("donkey")) {
+                /*
+                * modify by HG_Panda
+                * 错误消息会导致程序异常 ，此处改为强制length>=2 避免取不到结果
+                * */
+                //
+               Log.d("recv msg:", new String(datagramPacket.getData(),0,datagramPacket.getLength()));
+                String[] resvData = new String(datagramPacket.getData(),0,datagramPacket.getLength()).trim().split(":");
+
+                if (resvData.length >= 2 && resvData[0].equals("donkey")) {
                     String name = resvData[1];
                     String serverIp = datagramPacket.getAddress().getHostAddress();
                     sendMsg(makeDevice(serverIp, name));
